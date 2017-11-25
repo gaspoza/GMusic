@@ -1,0 +1,6 @@
+google_account = 'account'
+google_password = 'password'
+cache_directory = 'Cache'
+download_directory = 'Download'
+playlist_directory = download_directory + '/' + 'Playlist'
+library_directory = download_directory + '/' + 'Library'
