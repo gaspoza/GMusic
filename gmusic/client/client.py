@@ -34,13 +34,13 @@ class Client:
 
         # Retrieve metadata
         song = self._gmusic_handler.get_song(track_id)
+
         self._set_metadata(filename, song)
         self._rename(filename, folder_name, formatter_type, song)
 
     def _save_track_in_cache(self, track_id):
         filename_in_cache = track_id + '.mp3'
         src = os.path.join(self._cache_directory, filename_in_cache)
-        # Download file
         if not self._sm.has_file(src):
             tmp_file = self._gmusic_handler.download_track(track_id)
             self._sm.rename(tmp_file, src)
@@ -54,7 +54,6 @@ class Client:
 
     @staticmethod
     def _set_metadata(filename, song):
-        # Write mp3 tags
         tagger = TagWriter(filename)
         tagger.write_title(song.title)
         tagger.write_artist(song.artist)
