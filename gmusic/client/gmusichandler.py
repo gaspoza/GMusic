@@ -1,9 +1,9 @@
 import urllib.request
 
-from gmusic.client.track import Track
+from client.track import Track
 from gmusicapi import Mobileclient
 
-from gmusic.client.playlist import Playlist
+from client.playlist import Playlist
 
 
 class GMusicHandler:

@@ -1,11 +1,11 @@
 import os
 
-from gmusic.filesystem.storagemanager import StorageManager
+from filesystem.storagemanager import StorageManager
 
-from gmusic.client.gmusichandler import GMusicHandler
-from gmusic.config import *
-from gmusic.filesystem.formatter import FORMATTER_MAP
-from gmusic.tag.tagwriter import TagWriter
+from client.gmusichandler import GMusicHandler
+from config import *
+from filesystem.formatter import FORMATTER_MAP
+from tag.tagwriter import TagWriter
 
 
 class Client:

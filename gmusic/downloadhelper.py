@@ -1,5 +1,5 @@
-from gmusic.client.client import Client
-from gmusic.config import *
+from client.client import Client
+from config import *
 
 
 class DownloadHelper:
@@ -18,7 +18,7 @@ class DownloadHelper:
     def download_album(self, artist_name, album_name):
         if artist_name is not None:
             tracks = self.client.get_all_song()
-            folder = library_directory + '/' +artist_name + '/' + album_name
+            folder = library_directory + '/' + artist_name + '/' + album_name
 
             for track_id, track in tracks.items():
                 if track.artist == artist_name and track.album == album_name:
@@ -28,9 +28,11 @@ class DownloadHelper:
 if __name__ == '__main__':
     helper = DownloadHelper()
 
-    playlist_name = 'Electro'
+    #playlist_name = 'Electro'
+    # playlist_name = 'Rock genere'
+    playlist_name = 'Provence 2019'
     helper.download_playlist(playlist_name)
 
-    # artist_name = 'Royal Blood'
-    # album_name = 'How Did We Get So Dark?'
+    # artist_name = 'Last Train'
+    # album_name = 'Weathering'
     # helper.download_album(artist_name, album_name)

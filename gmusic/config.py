@@ -1,6 +1,6 @@
 google_account = 'account'
 google_password = 'password'
-cache_directory = 'Cache'
-download_directory = 'Download'
+cache_directory = '/home/gaspoza/Workspace/python/gmusic/gmusic/Cache'
+download_directory = '/home/gaspoza/Workspace/python/gmusic/gmusic/Download'
 playlist_directory = download_directory + '/' + 'Playlist'
 library_directory = download_directory + '/' + 'Library'

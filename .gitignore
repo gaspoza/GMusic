@@ -3,6 +3,7 @@
 
 .idea/
 __pycache__/
-venv
+.vscode
+.venv
 gmusic/Cache
 gmusic/Download
