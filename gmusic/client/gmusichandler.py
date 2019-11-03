@@ -16,7 +16,8 @@ class GMusicHandler:
         self.password = password
 
         self.api = Mobileclient()
-        if not self.api.login(user, password, Mobileclient.FROM_MAC_ADDRESS):
+
+        if not self.api.oauth_login(Mobileclient.FROM_MAC_ADDRESS):
             raise Exception('Failed to login...')
 
         self.tracks = {}

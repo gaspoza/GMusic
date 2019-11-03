@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     #playlist_name = 'Electro'
     # playlist_name = 'Rock genere'
-    playlist_name = 'Provence 2019'
+    playlist_name = 'Download'
     helper.download_playlist(playlist_name)
 
     # artist_name = 'Last Train'
